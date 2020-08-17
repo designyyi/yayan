@@ -1,0 +1,287 @@
+html body{
+    margin: 0px;
+    color: #604a40;
+    font-size: 18px;
+    position: relative;
+    letter-spacing: 3px;
+    /* font-family: '微軟正黑體'; */
+    /* font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; */
+}
+
+/* 只有l ogo、menu-open 不一樣 */
+
+/* 右側也會不同 */
+
+.left-float{
+    font-size: 0.5em;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    writing-mode: vertical-rl;
+    color: #604a40;
+    font-family: 'GoudyOldStyle';
+}
+
+.right-float{
+    position: absolute;
+    right: 42px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-fb{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/fb-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.right-fb:hover{
+    opacity: 0.6;
+}
+
+.right-ig{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/ig-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.right-ig:hover{
+    opacity: 0.6;
+}
+
+
+/* 右側也會不同 */
+
+.logo{
+    width: 30px;
+    height: 30px;
+    background: url('../img/share/icon-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.menu-open{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/menu-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+/* 只有l ogo、menu-open 不一樣 */
+
+.main{
+    width: 100vw;
+    height: 88vh;
+    padding-top: 12vh;
+    background: url('../img/share/marble.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-mode {
+    display: flex;
+}
+
+.phone-mode {
+    display: none;
+}
+
+.caption{
+    text-align: center;
+    color: #604a40;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 100%;
+    text-indent: -14px;
+    font-family: 'GoudyOldStyle';
+}
+
+.sub-caption{
+    text-align: center;
+    color: #604a40;
+    letter-spacing: 17px;
+    text-indent: 1px;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    width: 100%;
+}
+
+.article{
+    display: flex;
+    max-width: 800px;
+    width: 80%;
+    /* margin: auto; */
+    padding-right: 15px;
+}
+
+.href-img {
+    color: rgb(96, 74, 64);
+}
+
+.item-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+.space-img{
+    min-width: 130px;
+    max-width: 10%;
+    border-radius: 100px;
+    transition: all 0.6s;
+}
+
+.straight-line{
+    height: 50px;
+    width: 0.5px;
+    background: #604a40;
+    margin-bottom: 8px;
+    transition: all 0.6s;
+}
+
+.eng-word{
+    font-size: 0.8em;
+    margin-bottom: 8px;
+    font-family: 'GoudyOldStyle';
+}
+
+.ch-word{
+    font-size: 0.8em;
+}
+
+@media( max-width: 1023px ){
+
+    .caption {
+        top: 80px;
+        text-indent: 3px;
+    }
+
+    .sub-caption {
+        top: 108px;
+        text-indent: 17px;
+    }
+
+    /* 中間輪播 */
+
+    .main{
+        width: 100vw;
+        height: 100vh;
+        background: url('../img/share/marble.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .desktop-mode {
+        display: none;
+    }
+
+    .phone-mode {
+        display: flex;
+    }
+
+    .sub-main{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .rotate{
+        width: 100%;
+    }
+
+    .href-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unit-img{
+        width: 95%;
+        border-radius: 100px;
+        transition: all 0.6s;
+    }
+
+    .eng-word{
+        font-size: 0.8em;
+        margin-bottom: 8px;
+        color: #604a40;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .ch-word{
+        font-size: 0.8em;
+        color: #604a40;
+        text-align: center;
+    }
+
+    /* swiper shadow delete */
+
+    .swiper-container-3d .swiper-slide-shadow-left {
+        display: none!important;
+    }
+
+    .swiper-container-3d .swiper-slide-shadow-right {
+        display: none!important;
+    }
+
+
+    /* 左右兩側消失 */
+
+    .left-float {
+        display: none;
+    }
+
+    .right-float {
+        display: none;
+    }
+}

@@ -1,0 +1,437 @@
+html body{
+    margin: 0px;
+    color: #604a40;
+    font-size: 18px;
+    position: relative;
+    letter-spacing: 3px;
+    /* font-family: '微軟正黑體'; */
+    /* font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; */
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+a{
+    color: #604a40;
+}
+
+/* 只有l ogo、menu-open 不一樣 */
+
+.logo{
+    width: 30px;
+    height: 30px;
+    background: url('../img/share/icon-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: fixed;
+    top: 25px;
+    left: 30px;
+}
+
+.menu-open{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/menu-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+/* 只有l ogo、menu-open 不一樣 */
+
+/* 右側也會不同 */
+
+.left-float{
+    font-size: 0.5em;
+    position: fixed;
+    left: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    writing-mode: vertical-rl;
+    color: #604a40;
+    font-family: 'GoudyOldStyle';
+}
+
+.right-float{
+    position: fixed;
+    right: 42px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-fb{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/fb-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.right-fb:hover{
+    opacity: 0.6;
+}
+
+.right-ig{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/ig-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.right-ig:hover{
+    opacity: 0.6;
+}
+
+/* 右側也會不同 */
+
+.main{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: url('../img/share/marble.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-outer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-us{
+    margin-bottom: 10px;
+    font-family: 'GoudyOldStyle';
+}
+
+.about-yayan{
+    margin-bottom: 40px;
+    letter-spacing: 13px;
+    padding-left: 10px;
+}
+
+.about-img{
+    width: 440px;
+    margin-bottom: 40px;
+}
+
+.about-title{
+    margin-bottom: 20px;
+}
+
+.about-text{
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0.8em;
+}
+
+
+/* 輪播 img */
+
+.center-box{
+    height: auto;
+    margin: 60px 0px 120px;
+}
+
+.center-big-img{
+    height: 400px;
+    width: 100%;
+    /* background-image: url('../img/content/marjorie/marjorie-main.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.center-big-img:hover{
+    opacity: 0.6;
+}
+
+.center-single-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-single-img{
+    height: 177px;
+    width: 177px;
+    margin: 0px 4px;
+    /* background-image: url('../img/content/marjorie/marjorie-main.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.center-single-img:hover{
+    opacity: 0.6;
+}
+
+.center-single-img:first-child{
+    margin: 0px 4px 0px 0px;
+}
+
+.center-single-img:last-child{
+    margin: 0px 0px 0px 4px;
+}
+
+.last-center-single{
+    position: relative;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4em;
+}
+
+.last-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.last-cover-num {
+    font-family: 'GoudyOldStyle';
+    z-index: 2;
+}
+
+.center-single:hover{
+    opacity: 0.6;
+}
+
+
+/* full img */
+
+.full-box{
+    display: flex;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.full-box-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.full-inner{
+    width: 100%;
+    margin: auto auto;
+}
+
+.full-img-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-img{
+    /* width: 100%; */
+    height: 90%
+}
+
+.full-left{
+    position: absolute;
+    left: 10%;
+    top: 46%;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    z-index: 4;
+}
+
+.full-right{
+    position: absolute;
+    right: 10%;
+    top: 46%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+
+
+@media( max-width: 1023px ){
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+
+    .main-outer {
+        width: 100%;
+        margin-top: 90px;
+    }
+
+    .about-us {
+        margin-bottom: 6px;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .about-title {
+        font-size: 16px;
+    }
+
+    .about-text {
+        font-size: 12px;
+        padding: 0px 0px;
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+    }
+
+
+    .center-box {
+        width: 80%;
+        margin: 0px 0px 120px;
+    }
+
+    .center-big-img {
+        height: 180px;
+        margin-bottom: 4px;
+    }
+
+    .center-single-img {
+        width: 32.5%;
+        height: 80px;
+        margin: 0px 2px;
+    }
+
+    .center-single-img:first-child{
+        margin: 0px 2px 0px 0px;
+    }
+    
+    .center-single-img:last-child{
+        margin: 0px 0px 0px 2px;
+    }
+
+    .img-3 {
+        position: relative;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.4em;
+    }
+
+    .img-4 {
+        display: none;
+    }
+
+    .last-center-single {
+        display: none;
+    }
+    
+
+    /* full img */
+
+    .full-box{
+
+    }
+    
+    .full-box-inner {
+
+    }
+    
+    .full-inner{
+        width: 88%;
+        margin: auto;
+    }
+    
+    .full-img{
+        width: 97%;
+        height: auto;
+    }
+
+    .full-left{
+        left: 2%;
+        top: 49%;
+        width: 15px;
+        height: 15px;
+    }
+
+    .full-right{
+        right: 2%;
+        top: 49%;
+        width: 15px;
+        height: 15px;
+    }
+
+        /* full img 結束*/
+
+
+    /* 左右消失 */
+
+    .left-float {
+        display: none;
+    }
+
+    .right-float {
+        display: none;
+    }
+
+}
+
+
+@media( min-width: 1600px ){
+
+    .full-img{
+        width: auto;
+        height: 70%
+    }
+
+}

@@ -1,0 +1,107 @@
+html body{
+    margin: 0px;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    letter-spacing: 3px;
+    overflow: hidden;
+    /* font-family: '微軟正黑體'; */
+    /* font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; */
+}
+
+
+/* 只有logo、menu-open 顏色不一樣 */
+
+.logo{
+    width: 30px;
+    height: 30px;
+    background: url('../img/share/icon-white.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.menu-open{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/menu-white.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+/* 只有logo、menu-open 顏色不一樣 */
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1 !important;
+}
+
+.img-1{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.owl-dot{
+    display: none;
+}
+
+.center{
+    position: absolute;
+    text-align: center;
+    top: 39%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.center-img{
+    background: url('../img/index/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    text-align: center;
+    text-align: center;
+    width: 95px;
+    height: 120px;
+}
+
+.footer{
+    font-size: 0.5em;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'GoudyOldStyle';
+    /* color: #604a40; 深咖啡*/
+    /* color: #c59b6d; 滑過去淺咖啡 */
+    /* color: #f2e3d8; 預設淺皮膚色色*/
+}
+
+@media(max-width: 800px) {
+    html body{
+        font-size: 18px;
+    }
+
+    .center-img {
+        width: 60px;
+        height: 80px;
+    }
+}

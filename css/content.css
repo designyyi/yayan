@@ -1,0 +1,554 @@
+html body{
+    color: #604a40;
+    font-size: 18px;
+    position: relative;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* background-image: url('../img/share/marble.jpg'); */
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    /* font-family: '微軟正黑體'; */
+    /* font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; */
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+a{
+    color: #604a40 ;
+}
+
+/* 只有l ogo、menu-open 不一樣 */
+
+.logo{
+    width: 30px;
+    height: 30px;
+    background: url('../img/share/icon-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: fixed;
+    top: 25px;
+    left: 30px;
+}
+
+.menu-open{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/menu-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+/* 只有l ogo、menu-open 不一樣 */
+
+/* 右側也會不同 */
+
+.left-float{
+    font-size: 0.5em;
+    position: fixed;
+    left: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    writing-mode: vertical-rl;
+    color: white;
+    font-family: 'GoudyOldStyle';
+}
+
+.right-float{
+    position: fixed;
+    right: 42px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-fb{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/fb-white.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.right-fb:hover{
+    opacity: 0.6;
+}
+
+.right-ig{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/ig-white.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.right-ig:hover{
+    opacity: 0.6;
+}
+
+
+/* 右側也會不同結束 */
+
+.main-img{
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.caption-out{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    /* padding: 40px 0px; */
+    background-color: #f2e3d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.caption-out::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    vertical-align: top;
+    background: url('../img/content/deco-icon.png') no-repeat 50%;
+    background-size: contain;
+    position: absolute;
+    left: 18%;
+    bottom: -60px;
+    opacity: 0.8;
+}
+
+.caption-inner{
+    width: 40%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.category-word{
+    border-radius: 100px;
+    border: 0.5px solid #604a40;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    letter-spacing: 4px;
+}
+
+.title-eng{
+    font-size: 18px;
+    width: 370px;
+    margin: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    font-family: 'GoudyOldStyle';
+}
+
+.title{
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+
+/*  */
+
+.bg-float {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-image: url('../img/share/marble.jpg');
+    z-index: -1;
+}
+
+.body-width{
+    width: 930px;
+    margin: auto;
+}
+
+/* img */
+
+.center-box{
+    height: auto;
+    margin: 60px 0px;
+}
+
+.center-big-img{
+    height: 400px;
+    width: 100%;
+    /* background-image: url('../img/content/marjorie/marjorie-main.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.center-big-img:hover{
+    opacity: 0.6;
+}
+
+.center-single-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-single-img{
+    height: 180px;
+    width: 180px;
+    /* background-image: url('../img/content/marjorie/marjorie-main.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.center-single-img:hover{
+    opacity: 0.6;
+}
+
+.last-center-single{
+    position: relative;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4em;
+}
+
+.last-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.last-cover-num {
+    font-family: 'GoudyOldStyle';
+    z-index: 2;
+}
+
+.center-single:hover{
+    opacity: 0.6;
+}
+
+/* key */
+
+.key-title-en{
+    text-align: center;
+    padding: 15px 0px;
+    font-family: 'GoudyOldStyle';
+}
+
+.key-title{
+    text-align: center;
+    padding-bottom: 40px;
+    letter-spacing: 6px;
+}
+
+.key-text{
+    padding-bottom: 80px;
+    font-size: 0.8em;
+    line-height: 32px;
+    text-align: justify;
+}
+
+/* excel */
+
+.excel-box{
+    display: flex;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+.excel-left{
+    width: 140px;
+    padding-right: 1%;
+    line-height: 20px;
+}
+
+.excel-right{
+    width: 74%;
+    line-height: 20px;
+}
+
+.back{
+    margin: 80px auto;
+    border-radius: 100px;
+    border: 0.5px solid #604a40;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+/* .back:hover{
+    opacity: 0.6;
+} */
+
+
+/* full img */
+
+.full-box{
+    display: flex;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.full-box-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.full-inner{
+    width: 100%;
+    margin: auto;
+}
+
+.full-img-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-img{
+    height: 80%;
+}
+
+.full-left{
+    position: absolute;
+    left: 10%;
+    top: 46%;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    z-index: 4;
+}
+
+.full-right{
+    position: absolute;
+    right: 10%;
+    top: 46%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+@media( max-width: 1023px ){
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+
+    .main-img{
+        height: 65vh;
+    }
+    
+    .caption-out{
+        height: 35vh;
+        /* padding: 20px 0px; */
+    }
+
+    .caption-out::before {
+        display: none;
+    }
+
+    .title-eng {
+        width: auto;
+        margin: 20px 0px;
+        line-height: 26px;
+    }
+
+    .body-width {
+        width: 88%;
+    }
+
+    .center-box {
+        margin: 30px 0px;
+    }
+
+    .center-big-img {
+        height: 300px;
+        margin-bottom: 4px;
+    }
+
+    .center-single-img {
+        width: 32.4%;
+        height: 90px;
+    }
+
+    .img-3 {
+        position: relative;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.4em;
+    }
+
+    .img-4 {
+        display: none;
+    }
+    
+
+    .last-center-single {
+        display: none;
+    }
+
+    /* full img */
+
+    .full-box{
+
+    }
+    
+    .full-box-inner {
+
+    }
+    
+    .full-inner{
+        width: 88%;
+        margin: auto;
+    }
+    
+    .full-img{
+        width: 97%;
+        height: auto;
+    }
+
+    .full-left{
+        left: 2%;
+        top: 49%;
+        width: 15px;
+        height: 15px;
+    }
+
+    .full-right{
+        right: 2%;
+        top: 49%;
+        width: 15px;
+        height: 15px;
+    }
+
+        /* full img 結束*/
+
+    .key-text {
+        padding: 0px 20px 50px
+    }
+
+    .excel-box {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .excel-left {
+        width: auto;
+        padding-right: 0;
+        line-height: auto;
+        color: #c59b6d;
+        font-size: 14.5px;
+    }
+
+    .excel-right {
+        width: auto;
+        line-height: auto;
+        margin-top: 10px;
+        font-size: 14.5px;
+    }
+
+    .back {
+        margin: 40px auto 80px;
+    }
+
+
+    /* 左右兩側消失 */
+
+    .left-float {
+        display: none;
+    }
+
+    .right-float {
+        display: none;
+    }
+
+}
+
+@media( min-width: 1400px ){
+
+    .full-img{
+        width: auto;
+        height: 75%
+    }
+
+}
+
+
+@media( min-width: 1600px ){
+
+    .full-img{
+        width: auto;
+        height: 70%
+    }
+
+}

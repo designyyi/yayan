@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'GoudyOldStyle';
+    src: url('../fonts/eng/GoudyOldStyleRegular.woff') format("woff"),
+         url('../fonts/eng/GoudyOldStyleRegular.ttf') format("truetype"),
+         url('../fonts/eng/GoudyOldStyleRegular.otf') format("embedded-opentype");
+}
+
+html body{
+    font-family: 'Noto Sans TC', 'Noto Sans SC', 'GoudyOldStyle' ,sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0.85;
+    display: none;
+    z-index: 2;
+}
+
+.menu-close{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/menu-close.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.menu-list{
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f2e3d8;
+    letter-spacing: 6px;
+}
+
+.portfolio{
+    color: #f2e3d8;
+    margin-bottom: 2px;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 3px;
+    font-family: 'GoudyOldStyle';
+}
+
+.portfolio:hover{
+    color: #c59b6d;
+}
+
+.menu-portfolio-line {
+    width: 120px;
+    height: 1px;
+    background-color: #c59b6d;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+.list-style{
+    color: #f2e3d8;
+    margin-bottom: 14px;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+.list-style:hover{
+    color: #c59b6d;
+}
+
+.class{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.class-style{
+    color: #f2e3d8;
+    margin-bottom: 3px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-family: 'GoudyOldStyle';
+}
+
+.class-style:hover{
+    color: #c59b6d;
+}
+
+.menu-about-line {
+    width: 115px;
+    height: 1px;
+    background-color: #c59b6d;
+    margin-bottom: 12px;
+    visibility: hidden;
+}
+
+.menu-contanct-line {
+    width: 110px;
+    height: 1px;
+    background-color: #c59b6d;
+    margin-bottom: 12px;
+    visibility: hidden;
+}
+
+.menu-home-line {
+    width: 70px;
+    height: 1px;
+    background-color: #c59b6d;
+    margin: 0px 20.5px 12px;
+    visibility: hidden;
+}
+
+.menu-social{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+.fb{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/fb-skin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.fb:hover{
+    background: url('../img/share/fb-light.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.ig{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/ig-skin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.ig:hover{
+    background: url('../img/share/ig-light.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.menu-lang{
+    font-size: 0.7em;
+}
+
+.menu-a {
+    color: #f2e3d8;
+}
+
+#tradition{
+    cursor: pointer;
+}
+
+#tradition:hover{
+    color: #c59b6d;
+}
+
+#simple{
+    cursor: pointer;
+}
+
+#simple:hover{
+    color: #c59b6d;
+}
+
+
+/* 下面的只有首頁沒有 */
+

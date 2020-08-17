@@ -1,0 +1,281 @@
+html body{
+    margin: 0px;
+    color: #604a40;
+    font-size: 18px;
+    position: relative;
+    letter-spacing: 3px;
+    /* font-family: '微軟正黑體'; */
+    /* font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; */
+}
+
+a{
+    color: #604a40;
+}
+
+/* 只有l ogo、menu-open 不一樣 */
+
+.logo{
+    width: 30px;
+    height: 30px;
+    background: url('../img/share/icon-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: fixed;
+    top: 25px;
+    left: 30px;
+}
+
+.menu-open{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/menu-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+/* 只有l ogo、menu-open 不一樣 */
+
+/* 右側也會不同 */
+
+.left-float{
+    font-size: 0.5em;
+    position: fixed;
+    left: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    writing-mode: vertical-rl;
+    color: #604a40;
+    font-family: 'GoudyOldStyle';
+}
+
+.right-float{
+    position: fixed;
+    right: 42px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-fb{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/fb-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.right-fb:hover{
+    opacity: 0.6;
+}
+
+.right-ig{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/ig-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.right-ig:hover{
+    opacity: 0.6;
+}
+
+
+/* 右側也會不同 */
+
+.main{
+    width: 100%;
+    height: 100%;
+    background: url('../img/share/marble.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.contact-eng{
+    margin-bottom: 10px;
+    font-family: 'GoudyOldStyle';
+}
+
+.contact-word{
+    margin-bottom: 45px;
+    letter-spacing: 10px;
+    padding-left: 5px;
+}
+
+.yayan-design{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    letter-spacing: 8px;
+}
+
+.contact-icon {
+    width: 26px;
+    margin-right: 14px;
+}
+
+.contact-yayan {
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    display: none;
+}
+
+.address{
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+.phone{
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-family: 'GoudyOldStyle';
+}
+
+.mail{
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-family: 'GoudyOldStyle';
+}
+
+.week{
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+.time{
+    margin-bottom: 40px;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-family: 'GoudyOldStyle';
+}
+
+.contact-social {
+    display: none;
+}
+
+.map{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+}
+
+.message{
+    margin-bottom: 30px;
+    font-size: 0.8em;
+}
+
+.form{
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-regular{
+    background: none;
+    border: none;
+    background: none;
+    border: none;
+    border-top: 1px solid #604a40;
+    width: 300px;
+    height: 40px;
+    color: #604a40;
+    padding: 6px;
+    font-family: 'GoudyOldStyle';
+}
+
+.input-area{
+    background: none;
+    border: none;
+    border-top: 1px solid #604a40;
+    border-bottom: 1px solid #604a40;
+    padding-top: 14px;
+    color: #604a40;
+    font-family: 'GoudyOldStyle';
+}
+
+.send{
+    margin-bottom: 50px;
+    font-size: 0.8em;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 0.5px solid #604a40;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
+@media( max-width: 1023px ){
+
+    .main {
+        padding-top: 90px;
+    }
+    
+    .contact-word{
+        display: none;
+    }
+    
+    .yayan-design{
+        display: none;
+    }
+    
+    .contact-icon {
+        display: none;
+    }
+    
+    .contact-yayan {
+        display: block;
+    }
+
+    .contact-social {
+        display: block;
+    }
+
+    .contact-social img {
+        width: 20px;
+        /* height: 20px; */
+        margin-bottom: 40px;
+    }
+
+    /* 左右消失 */
+
+    .left-float {
+        display: none;
+    }
+
+    .right-float {
+        display: none;
+    }
+
+}
