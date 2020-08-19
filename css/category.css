@@ -410,6 +410,7 @@ a{
     .form-text-box {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 240px;
         margin: 0px auto 18px;
         font-size: 12px;
