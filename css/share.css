@@ -171,6 +171,23 @@ a{
     background-position-x: center;
     background-position-y: center;
 }
+.line{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/line-skin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+.line:hover{
+    background: url('../img/share/line-light.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
 
 .menu-lang{
     font-size: 0.7em;

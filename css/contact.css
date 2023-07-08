@@ -96,6 +96,20 @@ a{
 .right-ig:hover{
     opacity: 0.6;
 }
+.right-line{
+    width: 20px;
+    height: 20px;
+    background: url('../img/share/line-brown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+.right-line:hover{
+    opacity: 0.6;
+}
 
 
 /* 右側也會不同 */
